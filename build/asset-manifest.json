@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/burrito.tcro.xyz/static/css/main.f1db546d.css",
+    "main.js": "/burrito.tcro.xyz/static/js/main.d125ce42.js",
+    "static/js/787.b265ecab.chunk.js": "/burrito.tcro.xyz/static/js/787.b265ecab.chunk.js",
+    "static/media/libarary_pic.jpg": "/burrito.tcro.xyz/static/media/libarary_pic.37fb1a14771455e8f848.jpg",
+    "static/media/abouttea.jpg": "/burrito.tcro.xyz/static/media/abouttea.b27f1bf6057355b7eecd.jpg",
+    "index.html": "/burrito.tcro.xyz/index.html",
+    "main.f1db546d.css.map": "/burrito.tcro.xyz/static/css/main.f1db546d.css.map",
+    "main.d125ce42.js.map": "/burrito.tcro.xyz/static/js/main.d125ce42.js.map",
+    "787.b265ecab.chunk.js.map": "/burrito.tcro.xyz/static/js/787.b265ecab.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f1db546d.css",
+    "static/js/main.d125ce42.js"
+  ]
+}
