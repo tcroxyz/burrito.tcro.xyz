@@ -41,9 +41,7 @@ export default function SinglePost() {
   console.log(singlePost);
   if (!singlePost)
     return (
-      <div className="justify-center items-center flex min-h-screen bg-purple-100">
-        Wrong URL for Blog post, please click the stories link above
-      </div>
+      <div className="justify-center items-center flex min-h-screen bg-purple-100"></div>
     );
 
   return (

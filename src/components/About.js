@@ -28,7 +28,7 @@ export default function About() {
   }, []);
 
   if (!author) {
-    return <div>No Author data</div>;
+    return <div className="bg-purple-100 h-screen"></div>;
   }
 
   return (
@@ -37,19 +37,26 @@ export default function About() {
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
       exit={{ opacity: 0, duration: 2 }}
-      className="relative"
+      className="relative bg-purple-100"
     >
-      <img src={abouttea} alt="Tea and Books" className="absolute w-full" />
-      <div className="p-10 lg:pt-48 container mx-auto relative">
-        <section className="bg-purple-800 opacity-80 rounded-lg shadow-2xl lg:flex p-20">
+      <img
+        src={abouttea}
+        alt="Tea and Books"
+        className="absolute object-cover w-full h-screen bg-purple-100"
+      />
+      <div className="p-8 lg:pt-48 container mx-auto relative">
+        <section className="bg-purple-800 opacity-80 rounded-lg shadow-2xl lg:flex p-8">
           <img
             src={urlFor(author.authorImage).url()}
             className=" rounded-full w-32 h-32 lg:w-64 lg:h-64 mr-8"
             alt={author.name}
           />
           <div className="text-lg flex flex-col justify-center">
-            <h1 className="cursive text-6xl text-purple-300 mb-4">
-              Hey, I'm <span className="text-purple-100">{author.name}</span>
+            <h1 className="cursive text-4xl lg:text-6xl text-purple-300 mb-4">
+              Hey, I'm{" "}
+              <span className="text-white text-4xl lg:text-7xl">
+                {author.name}
+              </span>
             </h1>
             <div className="prose lg:prose-xl text-white">
               <BlockContent

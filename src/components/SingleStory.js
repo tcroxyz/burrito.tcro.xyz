@@ -27,9 +27,7 @@ export default function SinglePost() {
 
   if (!singlePost)
     return (
-      <div className="justify-center items-center flex min-h-screen bg-purple-100">
-        Wrong URL for Story, please click the stories link above
-      </div>
+      <div className="justify-center items-center flex min-h-screen bg-purple-100"></div>
     );
 
   return (
@@ -40,10 +38,10 @@ export default function SinglePost() {
       exit={{ opacity: 0, duration: 2 }}
       className="bg-purple-100 min-h-screen p-12"
     >
-      <article className="container shadow-lg mx-auto bg-purple-100 rounded-lg">
+      <article className="container shadow-lg mx-auto bg-purple-200 rounded-lg border-2 border-gray-100">
         <header className="relative">
           <div className="absolute h-full w-full flex items-center justify-center p-8">
-            <div className="bg-purple-300 bg-opacity-75 rounded p-12 mt-10">
+            <div className="bg-purple-300 bg-opacity-75 rounded p-12 mt-10 shadow-lg border-2 border-gray-100">
               <h1 className="cursive text-3xl lg:text-6xl mb-4">
                 {singlePost.title}
               </h1>
@@ -53,7 +51,7 @@ export default function SinglePost() {
             </div>
           </div>
         </header>
-        <div className="px-6 lg:px-20 py-40 lg:py-40 prose lg:prose-xl max-w-full">
+        <div className="px-6 lg:px-20 py-40 lg:py-40 prose lg:prose-xl max-w-full  rounded-md ">
           <BlockConent
             blocks={singlePost.body}
             projectId="b1p89kdm"

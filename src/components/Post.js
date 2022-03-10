@@ -47,14 +47,14 @@ export default function Post() {
         >
           Welcome to my blog
         </motion.h2>
-        <motion.div
-          whileHover={{ scale: 1.05, originX: 0 }}
-          whileTap={{ scale: 1.0 }}
-          className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
-        >
+        <motion.div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {postData &&
             postData.map((post, index) => (
-              <article className="">
+              <motion.article
+                whileHover={{ scale: 1.05, originX: 0 }}
+                whileTap={{ scale: 1.0 }}
+                className=""
+              >
                 <Link to={"/post/" + post.slug.current} key={post.slug.current}>
                   <span
                     className="block h-64 relative rounded shadow leading-slug bg-white border-l-8 border-purple-400"
@@ -72,7 +72,7 @@ export default function Post() {
                     </span>
                   </span>
                 </Link>
-              </article>
+              </motion.article>
             ))}
         </motion.div>
       </motion.section>
