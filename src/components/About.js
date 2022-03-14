@@ -54,7 +54,7 @@ export default function About() {
           <div className="text-lg flex flex-col justify-center">
             <h1 className="cursive text-4xl lg:text-6xl text-purple-300 mb-4">
               Hey, I'm{" "}
-              <span className="text-white text-4xl lg:text-7xl">
+              <span className="text-white text-4xl lg:text-7xl ">
                 {author.name}
               </span>
             </h1>
