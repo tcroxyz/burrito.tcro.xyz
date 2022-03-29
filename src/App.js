@@ -5,9 +5,10 @@ import { BrowserRouter as Router } from "react-router-dom";
 // import Post from "./components/Post";
 // import Stories from "./components/Stories";
 // import SingleStory from "./components/SingleStory";
-import NavBar from "./components/NavBar";
+// import NavBar from "./components/NavBar";
 // import { AnimatePresence } from "framer-motion";
 import { AnimatedRoutes } from "./components/AnimatedRoutes";
+import NavBarN from "./components/NavBarN";
 
 function App() {
   // let location = useLocation();
@@ -15,7 +16,8 @@ function App() {
     <>
       {/* <AnimatePresence> */}
       <Router>
-        <NavBar />
+        {/* <NavBar /> */}
+        <NavBarN />
         <AnimatedRoutes />
       </Router>
       {/* </AnimatePresence> */}
